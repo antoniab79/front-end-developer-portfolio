@@ -1,49 +1,56 @@
+:root {
+  --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --heading-font-family: "Roboto", sans-serif;
+  --default-font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
+}
 h1 {
-  margin: 0 auto;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--heading-font-family);
   font-weight: 500;
   font-style: bold;
   font-size: 48px;
 }
 h2 {
-  margin: 0 auto;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--heading-font-family);
   font-weight: 500;
   font-style: bold;
-  font-size: 24px;
+  font-size: 28px;
 }
 h3 {
-  margin: 0 auto;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--heading-font-family);
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
 }
 
 p {
-  margin: 0 auto;
+  font-weight: normal;
+}
+.hero {
+  background: var(--secondary-color);
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  padding: 160px 0;
+}
+
+.hero p {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
 }
-button {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 18px 30px;
-  gap: 10px;
-  background: brown;
+
+.btn-hero {
+  background: var(--branding-color);
   border-radius: 50px;
+  font-family: var(--default-font-family);
+  font-weight: 500;
+  font-style: bold;
+  font-size: 14px;
+  padding: 15px 30px;
+  gap: 10px;
   margin: 0 auto;
   width: 200px;
   height: 53px;
