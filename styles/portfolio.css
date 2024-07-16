@@ -8,56 +8,148 @@
 body {
   font-family: var(--default-font-family);
 }
+h1 h2 h3 h4 h5 {
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
 h1 {
   font-family: var(--heading-font-family);
   font-weight: 500;
   font-style: bold;
   font-size: 48px;
-}
-h2 {
-  font-family: var(--heading-font-family);
-  font-weight: 500;
-  font-style: bold;
-  font-size: 28px;
-}
-h3 {
-  font-family: var(--heading-font-family);
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
+  line-height: 1.5;
 }
 
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-style: normal;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: var(--default-font-family);
+  font-size: 26px;
+  font-weight: 600;
+}
+
+h5 {
+  font-family: var(--default-font-family);
+  font-size: 14px;
+  font-weight: 600;
+}
 p {
+  font-family: var(--default-font-family);
   font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
 }
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 160px 0;
+  padding: 180px 0;
+}
+
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: 500;
+  font-style: bold;
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.hero h3 {
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .hero p {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
+  margin: 0;
 }
 
 .btn-hero {
   background: var(--branding-color);
-  border-radius: 50px;
-  font-family: var(--default-font-family);
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
   font-weight: 500;
   font-style: bold;
-  font-size: 14px;
+  font-size: 16px;
   padding: 15px 30px;
   gap: 10px;
   margin: 0 auto;
-  width: 200px;
-  height: 53px;
-  left: 620px;
-  top: 546px;
 }
+
+.btn-hero:hover {
+  background: var(--secondary-color);
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 10px;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 16px;
+  padding: 15px 30px;
+  gap: 10px;
+  margin: 0 auto;
+}
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 20px;
+}
+.btn-branding-outline:hover {
+  background: var(--secondary-color);
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 10px 20px;
+}
+
 .social {
   margin: 0 auto;
   text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.project-description {
+  padding: 120px 60px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  p {
+    font-weight: 500;
+    padding: 0 10px;
+  }
+  .hero h3 {
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
