@@ -1,6 +1,6 @@
 :root {
-  --branding-color: #f2cee6;
-  --secondary-color: #f2e6d8;
+  --branding-color: #5d4d73;
+  --secondary-color: #e8edf6;
   --heading-font-family: "Roboto", sans-serif;
   --default-font-family: "Montserrat", sans-serif;
 }
@@ -78,8 +78,7 @@ p {
 
 .btn-hero {
   background: var(--branding-color);
-  color: whitesmoke;
-  border: 1px solid whitesmoke;
+  border: 1px solid var(--branding-color);
   border-radius: 10px;
   font-weight: 500;
   font-style: bold;
