@@ -151,6 +151,21 @@ p {
   padding: 10px 20px;
 }
 
+.logo {
+  max-height: 40px;
+}
+.nav-link {
+  color: #34373c;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: var(--btn-color);
+  font-weight: 600;
+}
+.nav-link.active {
+  color: var(--btn-color) !important;
+  font-weight: 600;
+}
 .social {
   margin: 0 auto;
   text-align: center;
